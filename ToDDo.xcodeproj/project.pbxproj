@@ -13,6 +13,8 @@
 		1AFB91D520FE620600599CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB91D420FE620600599CD1 /* Assets.xcassets */; };
 		1AFB91D820FE620600599CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB91D620FE620600599CD1 /* LaunchScreen.storyboard */; };
 		1AFB91E320FE620600599CD1 /* ToDDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB91E220FE620600599CD1 /* ToDDoTests.swift */; };
+		2F8A06693623759179184A24 /* Pods_ToDDoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA145F6424FDB2F3AC34A6BD /* Pods_ToDDoTests.framework */; };
+		D1E5F7F7C6C4E5ED81613FE7 /* Pods_ToDDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C88922CDC8F7D5E94485F43 /* Pods_ToDDo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14B81FB46B4760B9427A29C3 /* Pods-ToDDoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDDoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDDoTests/Pods-ToDDoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1AFB91CA20FE620400599CD1 /* ToDDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFB91CD20FE620400599CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AFB91CF20FE620400599CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		1AFB91DE20FE620600599CD1 /* ToDDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFB91E220FE620600599CD1 /* ToDDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDDoTests.swift; sourceTree = "<group>"; };
 		1AFB91E420FE620600599CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C88922CDC8F7D5E94485F43 /* Pods_ToDDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324DC530F6B64B138CB16A2B /* Pods-ToDDoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDDoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDDoTests/Pods-ToDDoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9284CDB757EC05B8EAB082E /* Pods-ToDDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDDo/Pods-ToDDo.release.xcconfig"; sourceTree = "<group>"; };
+		BA145F6424FDB2F3AC34A6BD /* Pods_ToDDoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDDoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC58E5BA94636601441603B /* Pods-ToDDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDDo/Pods-ToDDo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E5F7F7C6C4E5ED81613FE7 /* Pods_ToDDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8A06693623759179184A24 /* Pods_ToDDoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				1AFB91CC20FE620400599CD1 /* ToDDo */,
 				1AFB91E120FE620600599CD1 /* ToDDoTests */,
 				1AFB91CB20FE620400599CD1 /* Products */,
+				7063EBA9F51B8E7EB4B77CB3 /* Pods */,
+				1B37C55BC300F29A9CF6EC5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = ToDDoTests;
 			sourceTree = "<group>";
 		};
+		1B37C55BC300F29A9CF6EC5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C88922CDC8F7D5E94485F43 /* Pods_ToDDo.framework */,
+				BA145F6424FDB2F3AC34A6BD /* Pods_ToDDoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7063EBA9F51B8E7EB4B77CB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC58E5BA94636601441603B /* Pods-ToDDo.debug.xcconfig */,
+				B9284CDB757EC05B8EAB082E /* Pods-ToDDo.release.xcconfig */,
+				14B81FB46B4760B9427A29C3 /* Pods-ToDDoTests.debug.xcconfig */,
+				324DC530F6B64B138CB16A2B /* Pods-ToDDoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AFB91E720FE620600599CD1 /* Build configuration list for PBXNativeTarget "ToDDo" */;
 			buildPhases = (
+				040F1F96EE7F0DD116BC2030 /* [CP] Check Pods Manifest.lock */,
 				1AFB91C620FE620400599CD1 /* Sources */,
 				1AFB91C720FE620400599CD1 /* Frameworks */,
 				1AFB91C820FE620400599CD1 /* Resources */,
@@ -120,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AFB91EA20FE620600599CD1 /* Build configuration list for PBXNativeTarget "ToDDoTests" */;
 			buildPhases = (
+				2ABEDFFED2B16B5880F717BD /* [CP] Check Pods Manifest.lock */,
 				1AFB91DA20FE620600599CD1 /* Sources */,
 				1AFB91DB20FE620600599CD1 /* Frameworks */,
 				1AFB91DC20FE620600599CD1 /* Resources */,
+				1CA63B9A16949225AEC45FB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +226,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040F1F96EE7F0DD116BC2030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDDo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CA63B9A16949225AEC45FB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToDDoTests/Pods-ToDDoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDDoTests/Pods-ToDDoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABEDFFED2B16B5880F717BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDDoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AFB91C620FE620400599CD1 /* Sources */ = {
@@ -356,6 +450,7 @@
 		};
 		1AFB91E820FE620600599CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC58E5BA94636601441603B /* Pods-ToDDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +469,7 @@
 		};
 		1AFB91E920FE620600599CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9284CDB757EC05B8EAB082E /* Pods-ToDDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +488,7 @@
 		};
 		1AFB91EB20FE620600599CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B81FB46B4760B9427A29C3 /* Pods-ToDDoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +510,7 @@
 		};
 		1AFB91EC20FE620600599CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324DC530F6B64B138CB16A2B /* Pods-ToDDoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
