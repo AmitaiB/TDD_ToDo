@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ToDDo
+//  ToDo
 //
 //  Created by Amitai Blickstein on 7/17/18.
 //  Copyright © 2018 Amitai Blickstein. All rights reserved.

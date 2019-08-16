@@ -1,15 +1,15 @@
 //
-//  ToDDoTests.swift
-//  ToDDoTests
+//  ToDoTests.swift
+//  ToDoTests
 //
 //  Created by Amitai Blickstein on 7/17/18.
 //  Copyright © 2018 Amitai Blickstein. All rights reserved.
 //
 
 import XCTest
-@testable import ToDDo
+@testable import ToDo
 
-class ToDDoTests: XCTestCase {
+class ToDoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
