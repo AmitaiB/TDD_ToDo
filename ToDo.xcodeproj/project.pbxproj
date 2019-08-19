@@ -10,6 +10,7 @@
 		1118DEEF230B34340090B06B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118DEEE230B34340090B06B /* Location.swift */; };
 		1118DEF1230B35E20090B06B /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118DEF0230B35E20090B06B /* LocationTests.swift */; };
 		1118DEF3230B37ED0090B06B /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118DEF2230B37ED0090B06B /* ItemManagerTests.swift */; };
+		1118DEF5230B38580090B06B /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118DEF4230B38580090B06B /* ItemManager.swift */; };
 		1AFB91CE20FE620400599CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB91CD20FE620400599CD1 /* AppDelegate.swift */; };
 		1AFB91D020FE620400599CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB91CF20FE620400599CD1 /* ViewController.swift */; };
 		1AFB91D320FE620400599CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB91D120FE620400599CD1 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		1118DEEE230B34340090B06B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1118DEF0230B35E20090B06B /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		1118DEF2230B37ED0090B06B /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		1118DEF4230B38580090B06B /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		1AFB91CA20FE620400599CD1 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFB91CD20FE620400599CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AFB91CF20FE620400599CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				1AFB91D920FE620600599CD1 /* Info.plist */,
 				3876D3AA23074ED700DBA43E /* ToDoItem.swift */,
 				1118DEEE230B34340090B06B /* Location.swift */,
+				1118DEF4230B38580090B06B /* ItemManager.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFB91D020FE620400599CD1 /* ViewController.swift in Sources */,
+				1118DEF5230B38580090B06B /* ItemManager.swift in Sources */,
 				1AFB91CE20FE620400599CD1 /* AppDelegate.swift in Sources */,
 				1118DEEF230B34340090B06B /* Location.swift in Sources */,
 				3876D3AB23074ED700DBA43E /* ToDoItem.swift in Sources */,
