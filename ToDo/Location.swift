@@ -7,7 +7,14 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Location {
     let name: String
+    var coord: CLLocationCoordinate2D? = nil
+    
+    init(name: String, coord: CLLocationCoordinate2D? = nil) {
+        self.name = name
+        self.coord = coord
+    }
 }
