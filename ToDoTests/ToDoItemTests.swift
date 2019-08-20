@@ -9,7 +9,7 @@
 import XCTest
 @testable import ToDo
 
-class ToDoTests: XCTestCase {
+class ToDoItemTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -60,6 +60,34 @@ class ToDoTests: XCTestCase {
     func test_Items_WhenLocationDiffers_AreNotEqual() {
         let first  = ToDoItem(title: "", location: Location(name: "NYC"))
         let second = ToDoItem(title: "", location: Location(name: "LAX"))
+        
+        XCTAssertNotEqual(first, second, "should not be equal")
+    }
+    
+    func test_Items_WhenOneLocationIsNil_AreNotEqual() {
+        let first  = ToDoItem(title: "", location: Location(name: "NYC"))
+        let second = ToDoItem(title: "", location: nil)
+        
+        XCTAssertNotEqual(first, second, "should not be equal")
+    }
+    
+    func test_Items_WhenTimestampDiffers_AreNotEqual() {
+        let first  = ToDoItem(title: "", timestamp: 1.0)
+        let second = ToDoItem(title: "", timestamp: 0.0)
+        
+        XCTAssertNotEqual(first, second, "should not be equal")
+    }
+    
+    func test_Items_WhenDescriptionDiffers_AreNotEqual() {
+        let first  = ToDoItem(title: "", description: "NYC")
+        let second = ToDoItem(title: "", description: "LAX")
+        
+        XCTAssertNotEqual(first, second, "should not be equal")
+    }
+    
+    func test_Items_WhenTitlesDiffer_AreNotEqual() {
+        let first  = ToDoItem(title: "Foo")
+        let second = ToDoItem(title: "Bar")
         
         XCTAssertNotEqual(first, second, "should not be equal")
     }

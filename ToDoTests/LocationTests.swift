@@ -30,8 +30,7 @@ class LocationTests: XCTestCase {
     func test_init_SetsCoordinate() {
         let coord = CLLocationCoordinate2D(latitude: 1, longitude: 2)
         let loc = Location(name: "", coord: coord)
-        XCTAssertEqual(loc.coord?.latitude, coord.latitude)
-        XCTAssertEqual(loc.coord?.longitude, coord.longitude)
+        XCTAssertEqual(loc.coord, coord)
     }
     
     func test_EqualLocations_AreEqual() {

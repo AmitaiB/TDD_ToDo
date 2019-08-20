@@ -22,7 +22,7 @@ class ItemManager {
         return toDoItems[index]
     }
     
-    func checkItem(at index: Int) {
+    func checkOffItem(at index: Int) {
         let checkedItem = toDoItems.remove(at: index)
         doneItems.append(checkedItem)
     }
