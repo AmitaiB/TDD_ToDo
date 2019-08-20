@@ -16,7 +16,7 @@
 		1AFB91D320FE620400599CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB91D120FE620400599CD1 /* Main.storyboard */; };
 		1AFB91D520FE620600599CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB91D420FE620600599CD1 /* Assets.xcassets */; };
 		1AFB91D820FE620600599CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB91D620FE620600599CD1 /* LaunchScreen.storyboard */; };
-		1AFB91E320FE620600599CD1 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB91E220FE620600599CD1 /* ToDoTests.swift */; };
+		1AFB91E320FE620600599CD1 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB91E220FE620600599CD1 /* ToDoItemTests.swift */; };
 		3876D3AB23074ED700DBA43E /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3876D3AA23074ED700DBA43E /* ToDoItem.swift */; };
 		C1D6411F031A3ADC559DCE5D /* Pods_ToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405B6C43A2700DF334E44697 /* Pods_ToDo.framework */; };
 		F135B0E687AE68367E74B133 /* Pods_ToDoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517F25F301BB347968743907 /* Pods_ToDoTests.framework */; };
@@ -45,11 +45,12 @@
 		1AFB91D720FE620600599CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AFB91D920FE620600599CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AFB91DE20FE620600599CD1 /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AFB91E220FE620600599CD1 /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
+		1AFB91E220FE620600599CD1 /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		1AFB91E420FE620600599CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C255B0FD51C53BDF70A4A4 /* Pods-ToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo.release.xcconfig"; path = "Target Support Files/Pods-ToDo/Pods-ToDo.release.xcconfig"; sourceTree = "<group>"; };
 		3161102F91281AF7DCCA6FA4 /* Pods-ToDoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoTests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoTests/Pods-ToDoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3876D3AA23074ED700DBA43E /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		3876D3AC230B822600DBA43E /* ToDoItemSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemSpec.swift; sourceTree = "<group>"; };
 		405B6C43A2700DF334E44697 /* Pods_ToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		517F25F301BB347968743907 /* Pods_ToDoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63935BA8D1161F81F2EE4708 /* Pods-ToDoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoTests.release.xcconfig"; path = "Target Support Files/Pods-ToDoTests/Pods-ToDoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 			children = (
 				1AFB91CC20FE620400599CD1 /* ToDo */,
 				1AFB91E120FE620600599CD1 /* ToDoTests */,
+				3876D3AE230B93CE00DBA43E /* ToDoTests_Quick */,
 				1AFB91CB20FE620400599CD1 /* Products */,
 				582F53FF0B36D463457A50DD /* Pods */,
 				CD9427E1A8759759021DF529 /* Frameworks */,
@@ -115,12 +117,20 @@
 		1AFB91E120FE620600599CD1 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				1AFB91E220FE620600599CD1 /* ToDoTests.swift */,
+				1AFB91E220FE620600599CD1 /* ToDoItemTests.swift */,
 				1118DEF0230B35E20090B06B /* LocationTests.swift */,
 				1AFB91E420FE620600599CD1 /* Info.plist */,
 				1118DEF2230B37ED0090B06B /* ItemManagerTests.swift */,
 			);
 			path = ToDoTests;
+			sourceTree = "<group>";
+		};
+		3876D3AE230B93CE00DBA43E /* ToDoTests_Quick */ = {
+			isa = PBXGroup;
+			children = (
+				3876D3AC230B822600DBA43E /* ToDoItemSpec.swift */,
+			);
+			path = ToDoTests_Quick;
 			sourceTree = "<group>";
 		};
 		582F53FF0B36D463457A50DD /* Pods */ = {
@@ -327,7 +337,7 @@
 			files = (
 				1118DEF3230B37ED0090B06B /* ItemManagerTests.swift in Sources */,
 				1118DEF1230B35E20090B06B /* LocationTests.swift in Sources */,
-				1AFB91E320FE620600599CD1 /* ToDoTests.swift in Sources */,
+				1AFB91E320FE620600599CD1 /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
