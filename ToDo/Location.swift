@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct Location {
+struct Location: Equatable {
     let name: String
     var coord: CLLocationCoordinate2D? = nil
     
@@ -19,12 +19,8 @@ struct Location {
     }
 }
 
-extension Location: Equatable {
-    static func == (lhs: Location, rhs: Location) -> Bool {
-        if
-            (lhs.coord?.latitude != rhs.coord?.latitude) ||
-            (lhs.coord?.longitude != rhs.coord?.longitude)
-        { return false }
-        return true
+extension CLLocationCoordinate2D: Equatable {
+    public static func == (lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool {
+        return lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude
     }
 }

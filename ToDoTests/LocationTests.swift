@@ -55,13 +55,24 @@ class LocationTests: XCTestCase {
                                 secondLatLong: (0,2))
     }
     
+    func test_Locations_WhenOnlyOneHasNonNilCoordinates_AreNotEqual() {
+        assertLocationsNotEqual(firstName: "",
+                                firstLatLong: (0,0),
+                                secondName: "",
+                                secondLatLong: nil)
+    }
+    
+    // MARK: - Helpers
     func assertLocationsNotEqual(firstName: String,
                                 firstLatLong: (Double, Double)?,
                                 secondName: String,
-                                secondLatLong: (Double, Double)?) {
+                                secondLatLong: (Double, Double)?,
+                                line: UInt = #line) {
         let firstLoc = Location(name: firstName, coord: CLLocationCoordinate2D(latLong: firstLatLong))
         let secondLoc = Location(name: secondName, coord: CLLocationCoordinate2D(latLong: secondLatLong))
-        XCTAssertNotEqual(firstLoc, secondLoc, "should be unequal")
+        XCTAssertNotEqual(firstLoc,
+                          secondLoc,
+                          line: line)
     }
 }
 
